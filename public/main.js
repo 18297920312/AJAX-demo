@@ -53,7 +53,7 @@ let getJSON = document.querySelector('#getJSON');
 getJSON.onclick = () => {
     console.log('点击');
     let request = new XMLHttpRequest();
-    request.open('GET','/JSON.json');
+    request.open('GET','./JSON.json');
     request.onreadystatechange = () => {
         if(request.readyState === 4 && request.status >= 200 && request.status < 300){
             console.log(typeof request.response);
