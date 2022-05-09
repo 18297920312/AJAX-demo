@@ -1,7 +1,7 @@
 let getCSS = document.querySelector('#getCSS');
 getCSS.onclick = () => {
     const request = new XMLHttpRequest();
-    request.open('GET','/style.css');
+    request.open('GET','./style.css');
     request.onreadystatechange = () => {
         if(request.readyState === 4 && request.status >= 200 && request.status < 300){
             console.log('请求 CSS 成功');
@@ -18,7 +18,7 @@ getCSS.onclick = () => {
 let getJS = document.querySelector('#getJS');
 getJS.onclick = () => {
     const request = new XMLHttpRequest();
-    request.open('GET','/test.js');
+    request.open('GET','./test.js');
     request.onreadystatechange = () => {
         if(request.readyState === 4 && request.status >= 200 && request.status < 300){
             console.log('请求到 JS ');
@@ -35,7 +35,7 @@ getJS.onclick = () => {
 let getXML = document.querySelector('#getXML');
 getXML.onclick = () => {
     const request = new XMLHttpRequest();
-    request.open('GET','/XML.xml');
+    request.open('GET','./XML.xml');
     request.onreadystatechange = () => {
         if(request.readyState === 4 && request.status >= 200 && request.status < 300){
             console.log('请求到 XML ');
@@ -53,7 +53,7 @@ let getJSON = document.querySelector('#getJSON');
 getJSON.onclick = () => {
     // console.log('点击');
     let request = new XMLHttpRequest();
-    request.open('GET','/JSON.json');
+    request.open('GET','./JSON.json');
     request.onreadystatechange = () => {
         if(request.readyState === 4 && request.status >= 200 && request.status < 300){
             console.log(typeof request.response);
