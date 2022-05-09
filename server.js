@@ -75,7 +75,7 @@ var server = http.createServer(function(request, response){
   } else if(path === '/JSON.json'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/json;charset=utf-8')
-    response.write(fs.readFileSync('public/JSON.json'))
+    response.write(fs.readFileSync('./public/JSON.json'))
     response.end()
   } else if(path === '/page2'){
     response.statusCode = 200
