@@ -1,7 +1,7 @@
 const style = document.createElement('style');
 style.textContent = `
     body {
-        color:yellow;
+        background-color:yellow;
     }
 `;
 
